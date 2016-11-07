@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Super Chilli</string>
+       
+       
+    <string name="button_send">Log in</string>
+    <string name="title_activity_main2">Choose Characters</string>
+</resources>
