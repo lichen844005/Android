@@ -6,6 +6,8 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import static android.R.id.message;
+
 public class MainActivity extends AppCompatActivity {
     public final static String EXTRA_MESSAGE = "com.example.server.myapplication.MESSAGE";
     @Override
@@ -15,10 +17,8 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void sendMessage(View view) {
-        Intent intent = new Intent(this, Main2Activity.class);
-        EditText editText = (EditText) findViewById(R.id.edit_message);
-        String message = editText.getText().toString();
-        intent.putExtra(EXTRA_MESSAGE, message);
+        Intent intent = new Intent(this, Main3Activity.class);
+        intent.putExtra(EXTRA_MESSAGE, "message");
         startActivity(intent);
     }
 

@@ -10,4 +10,57 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.example.server.myapplication.Main3Activity">
 
+    <EditText
+        android:hint="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="33dp"
+        android:id="@+id/edit_message"
+        android:layout_below="@+id/edit_message2"
+        android:layout_alignLeft="@+id/edit_message2"
+        android:layout_alignStart="@+id/edit_message2" />
+
+    <EditText
+        android:hint="Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_message2"
+        android:layout_marginTop="178dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="viewStart" />
+
+    <Button
+        android:text="Account"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button6"
+        android:layout_alignBaseline="@+id/edit_message2"
+        android:layout_alignBottom="@+id/edit_message2"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7" />
+
+    <Button
+        android:text="Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button7"
+        android:layout_alignBaseline="@+id/edit_message"
+        android:layout_alignBottom="@+id/edit_message"
+        android:layout_toLeftOf="@+id/edit_message"
+        android:layout_toStartOf="@+id/edit_message"
+        android:layout_marginRight="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:text="Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="55dp"
+        android:id="@+id/button8"
+        android:layout_below="@+id/button7"
+        android:layout_alignLeft="@+id/button7"
+        android:layout_alignStart="@+id/button7"
+        android:onClick ="sendMessage"
+        android:clickable = "true"/>
 </RelativeLayout>

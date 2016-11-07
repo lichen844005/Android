@@ -19,13 +19,13 @@ public class Main2Activity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main2);
         Intent intent = getIntent();
-        String message = intent.getStringExtra(EXTRA_MESSAGE);
+        String message = intent.getStringExtra(Main3Activity.EXTRA_MESSAGE);
         TextView textView = (TextView) findViewById(R.id.textView);
         textView.setTextSize(40);
         textView.setText(message);
     }
 public void sendMessage(View view){
-    Intent intent = new Intent(this, Main3Activity.class);
+    Intent intent = new Intent(this, Main4Activity.class);
     TextView textView = (TextView) findViewById(R.id.textView);
     String message = textView.getText().toString();
     intent.putExtra(EXTRA_MESSAGE,message);
